@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imgpequena.png" type="image/png"><!--caso a imagem não tenha tamanho médio de 750px, será carregado dentro do atributo srcset a imagem pequena, que possui 300px-->
+        <source media="(max-width: 1200px)" srcset="imgmédia.png" type="image/png"><!--caso a foto seja menor que 1200, vai carregar o png médio, que possui 700 de largura-->
+        <img src="imggrande.png" alt="lawliete"> <!--o png law3 possui 1200 de largura-->
+    </picture>
+</body>
+</html>
+
+<!--sempre adicione 50pixeis a mais. Se uma imagem tem 1200px, coloque 1250 como max-width-->
+<!--Não se esqueça de manter a ordem dentro da tag picture. As imagem menores costumam ficar abaixo das menores-->
+<!--crie imagem de largura 300x300, 700x700, e 1000x1000 no seu editor de imagens.-->

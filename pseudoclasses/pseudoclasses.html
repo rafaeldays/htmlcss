@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+   
+        div{
+            display: inline-block; /*caso queira deixar as caixas alinhadas uma ao lado da outra(também podemos usar flexbox)*/
+            background-color: lightblue;
+            border: 2px solid;
+            border-color: lightcoral;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /*para criar pseudo classes temos que relaciona-la a um elemento ou uma classe*/
+        div:hover{
+            background-color: green; /*com a pseudo classe hover, nós podemos configurar para mudar de cor quando passarmos o mouse por cima*/
+        }
+        /*pseudo classes servem para configurar o estado de um elemento*/
+    </style>
+</head>
+<body>
+    <!--criando três divs com bordas vermelhas-->
+    <div>01</div>
+    <div>02</div> <!--terá borda verde-->
+    <div>03</div>
+</body>
+</html>

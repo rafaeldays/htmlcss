@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ /*configuração global do CSS*/
+           height: 100%; 
+        }
+
+        /*com a configuração acima, poderemos usar o linear gradiente com direção to top(para cima) e com direção to bottom(para baixo), sem ficar bizarro*/
+        body{
+            background-image: linear-gradient(to bottom, white, blue); /*função interna de gradiente linear*/
+        }
+    </style>
+</head>
+<body>
+    <p>i dont care</p>
+</body>
+</html>
+
+<!--para usarmos a função linear gradiente, precisamos indicar dentro dos parenteses a direção do linear
+-você pode também escrever a direção em graus, ex: 180deg
+-se não gostar de usar em graus, usa to left ou to right
+como resultado, nós obtemos um gradiente de branco pra azul indo para a esquerda(pode por a cor que quiser)
+
+caso queira colocar a direção para cima (top), você terá que fazer uma configuração global usando o asteristico *
+-->

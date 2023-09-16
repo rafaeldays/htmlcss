@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+h1{
+    background-color: aqua; /*essa cor não será aplicada, pois as classes que criamos abaixo estão sobrepondo a cor aqua.*/
+}
+.red{
+    background-color: red;
+    text-align: left;
+}
+.blue{
+    background-color: blue;
+    text-align: center;
+}
+.green{
+    background-color: green;
+    text-align: left;
+}
+.waito{
+    color: white;
+}
+.destaque{
+    background-color: yellow;
+}
+.pesinho{
+    font-weight: bold;
+}
+#teste{
+    background-color: green;
+}
+body{
+    background-color: rgb(90, 74, 74);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*tira as serifas*/
+        }
+        /*
+            como ocultar paragráfos que estão presentes dentro de divs:
+        */
+        div > p{ /*para cada paragrafo dentro de div:*/
+            display: none; /*esconde usando o display none*/
+        }
+        div:hover{
+            color: red; /*se passar o mouse sobre o texto que está dentro da div, ficará vermelho*/
+        }
+        div:hover > p{ /*se passar o mouse por cima do texto da div, o paragráfo oculto aparecerá*/
+            display: block; /*essa linha faz o paragrafo aparecer.*/
+            background-color: black;
+            color: blue; 
+            /*mostra o paragrafo, mas com cor azul e fundo preto*/
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>tente passar o mouse abaixo</p>
+    <div>
+        passa o mouse aqui
+        <p>olá</p> <!--essa tag de paragráfo será ocultada, mas ainda estará dentro da tag div-->
+    </div>
+</body>
+</html>

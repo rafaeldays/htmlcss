@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só testando</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            /*a configuração de baixo não faz com que a div (main) quebre. A caixa continua adaptada para varios dispositivos, mas a imagem continua quebrada dependendo da resolução*/
+            background-color: white;
+            padding: 55px;
+            border-radius: 30px;
+            min-width: 200px; /*colocamos 320px, e isso fará com que seu site se adapte até a largura de 320x, ficando mais bonito de se ver(mas as imagens continuarão quebradas)*/
+            max-width: 800px; /*a imagem ocupará 800px mesmo se a tela for gigante*/
+            margin: auto; /*centraliza o conteúdo da div, e faz com que a imagem não quebre. Portanto fica responsivo*/
+        }
+        /*bora resolver a quebra de imagens deixando-as responsivas*/
+        img{
+            width: 100%; /*com essa configuração, a imagem já ficará responsiva mesmo se a largura for menor ou maior que 800px*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>eu sei lá</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis neque laudantium minus quis ab ex dicta eligendi, cum libero ipsum recusandae cupiditate similique enim, aliquid commodi sapiente excepturi minima fuga.</p>
+        <picture> <!--quando chegar na largura de 800px ou menos, será carregado e mostrado a imagem da irina, mas com as dimensões de 400x400(a primeira imagem tinha 800x236)-->
+            <source media="(max-width: 800px)" srcset="irina-blok-pq.jpg" type="image/jpg"> <!--usamos outra imagem pra deixar responsivo. agora podemos dar zoom in e zoom out sem ver quebras de imagem-->
+            <img src="irina-blok.jpg" alt="muié">
+            <!--você pode ir diminuindo o max width se achar que a largura está mt grande(você pode colocar em 600px)-->
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consectetur ratione reprehenderit. Aut incidunt quidem nisi repudiandae est adipisci eius fugiat ullam optio neque inventore exercitationem at consequuntur atque, ea quae deleniti mollitia quas sequi assumenda suscipit dolorem. Culpa, a nemo dolorum blanditiis, cumque odio neque nesciunt asperiores unde earum natus aspernatur veritatis fuga. Porro cumque eos numquam voluptas sapiente incidunt, aut minus veritatis odit, cupiditate iusto reprehenderit saepe ullam nesciunt, magnam inventore iure? Perspiciatis, minima. Minima, qui quae molestiae quos facilis aut aperiam minus, libero aliquam omnis quaerat? Facere, modi beatae? Delectus, neque quas! Accusantium numquam laudantium cupiditate facere?</p>
+    </main>
+    <!--faça os testes, use a rolagem lateral ou mude a largura do seu navegador. em algum momento a imagem quebra, porém os textos se adaptam melhor-->
+</body>
+</html>

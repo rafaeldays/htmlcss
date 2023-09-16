@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;  
+            margin: 0px;    /*isso faz com que o footer perca sua margin(consome a tela inteira)*/
+        }
+        header{
+            background-color: white;
+            margin: auto;
+            width: 600px;
+            padding: 15px;
+        }
+        main{
+            background-color: aliceblue;
+            margin: 30px; /*não é necessário configurar todas as direções*/
+            padding: 30px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px; /*footer sem margin*/
+        }
+        nav{/*menu de navegação*/
+            background-color: rgb(111, 94, 101);
+            padding: 5px;
+        }
+        nav > a{ /*todo link que estiver dentro do nav*/
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px; /*dá uma separadinha nos links, pra não ficar mt colento*/
+        }
+        nav > a:hover{ /*sempre que passar o mouse em links que estão contidos na tag nav, ele ficará com decoração underline*/
+            text-decoration: underline;
+        }
+        article{
+            background-color: lightgray; /*O que estiver dentro do  article, ficará com fundo cinza*/
+            padding: 3px; /*opcional*/
+        }
+        article > aside { 
+            /*
+            article: pai
+            aside: filho
+            
+            o que estiver dentro do article, ficará com um fundo cinza escurinho
+            -apenas o aside que estiver dentro da tag semântica article será afetado, o outro 
+            */
+            background-color: rgb(93, 90, 90);
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1 style="text-align: center;">este ser meu site</h1>
+        <nav>
+             <a href="#">Link</a>
+             <a href="#">link</a>
+        </nav>
+    </header>
+    <main> 
+        <h1>haro warudo</h1>
+        <section id="assuntoslegais">
+
+            <ol>
+                <li>Cigarros</li>
+                <li>Metanfetamina</li>
+                <li>poligamia</li>
+            </ol>
+        </section>
+        <section id="noticias">
+            <!--dentro dessa section, que é uma tag semantica, teremos a tag article, que também é semântica-->
+            <article>
+                <h2>uma noticia sobre o reporter que foi assasinado ao vivo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In suscipit vel, deleniti veritatis saepe earum tempora eos sint illo totam consequuntur natus perferendis necessitatibus et minima doloremque, eum sapiente excepturi!</p>
+                <aside>    
+                    artigo escrito por fernando pessoa
+                </aside> <!--conteúdo que é relacionado ao artigo(aqui tu podes por o nome do autor)-->
+            </article>
+                
+            <article>
+                
+            </article>
+    
+        </section>
+
+    </main>
+    <footer> 
+        <p>idk about you</p>
+    </footer>
+
+</body>
+</html>

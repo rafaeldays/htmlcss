@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: rgb(16, 25, 201); /*link com cor azul*/
+            font-weight: bold;
+            text-decoration: none; /*tira o sublinhamento que fica embaixo dos links (dependendo do navegador, o sublinhamento não vai sumir)*/
+        }
+        a:hover{
+            text-decoration: underline; /*adiciona sublinhamento somente quando o mouse estiver sobre o link*/
+            color: black;
+        }
+        a:visited{ /*pseudo classe util*/
+            color: rgb(255, 0, 38); /*se o link já foi clicado anteriormente, ele ficará com cor vermelha, indicando que já foi visitado*/
+        }
+        a:active{
+            color: brown; /*quando o link for pressionado, sua cor ficará brown*/
+        }
+        a::before{
+            content: '❀';
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgrey;
+        }
+        a::after{/*esse pseudo elemento precisa de dois ::)*/
+            content: '❀'; /*aqui dentro colocamos qualquer caractere*/
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+
+    <u>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UCu9V83C91RhMBShn3gZ8Q6g">link do canal</a></li>
+        <li><a target="_blank" href="https://github.com/karasuxd">meu github</a></li>
+        <li><a target="_blank" href="https://soundcloud.com/karasu-734171026/heaven-hammock">meu soundcloud</a></li>
+    </u>
+    
+</body>
+</html>
+
+<!--mais pseudo classes que usaremos-->

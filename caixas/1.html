@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manga</title>
+    <style>
+        h1{ 
+            display: inline; /*agora o h1 se tornou elemento inline, portanto não ocupará a tela inteira*/
+            height: 200px;
+            width: 200px;
+            background-color: grey; 
+            text-align: center;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: blue;
+
+        
+            
+        }
+        a{ 
+            display: block; /*essa linha fez o elemento de links deixar de ser inline. agora é box-level*/
+            border-width: 10px;
+            border-style: dashed;
+            border-color: red;
+
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de box level</h1> <!--h1 é um elemento que ocupa 100% de largura.-->
+    <p>parágrafos também são elementos box level. mas elementos como <a href="#">os links, são inline level</a>, sacou?</p>
+</body>
+</html>

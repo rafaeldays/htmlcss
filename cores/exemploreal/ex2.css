@@ -1,0 +1,31 @@
+@charset "UTF-8"; 
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #007566, #589A8D);
+}
+main{
+    background-color: white;
+    width: 500px;
+    padding: 22px;
+    margin: auto;
+    border-radius: 13px; 
+    box-shadow:7px 5px 10px #233c34b7; /*pegamos o verde mais escuro da mesma palheta de cores, e o usamos para formar uma sombra*/
+
+    
+}
+
+p{
+    text-align: justify;
+    background-color: cornflowerblue;
+}
+h1{
+    color: #FA1505;
+    text-shadow: 3px 2px 3px rgba(95, 3, 3, 0.464); /*aplicamos no texto uma sombra com 3px pro lado, 2px pra baixo, e 3px de espalhamento*/
+    /*a cor da sombra é um vermelho mais escuro com 0.464 de transparência, só pra deixar harmônico e mais discreto*/
+}
+h2{
+    color: #5E05F0;
+}

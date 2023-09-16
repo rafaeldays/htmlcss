@@ -1,0 +1,37 @@
+@charset "UTF-8"; /*semmpre use essa linha para não ter problemas com caracteres especiais dentro do css*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #FA1505, #5E05F0, #E3A410);
+}
+main{/*seletor pra main. todo conteúdo principal sofrerá modificações*/
+    background-color: white;
+    /*não quero que ocupe a largura da tela inteira, então vamos mudar isso:*/
+    width: 500px;
+    /*perceba que faltou uma parte do texto, para corrigir isso usaremos o padding*/
+    padding: 22px;
+    margin: auto; /*centraliza a caixa main no meio, independente do que estiver no meio*/
+    border-radius: 13px; /*deixa a borda da caixa mais arredondada*/
+    box-shadow:5px 5px 30px rgb(0, 0, 0);
+     /*para aplicar sombras em caixas
+        primeiro parametro: direção pro lado
+        segundo: direção da sombra pra baixo
+        terceiro: o quanto a sombra irá se espalhar
+        quarto: indicar a transparência da sombra
+
+        no box shadow, colocamos 5px pro lado, 5px pra baixo, e 30px de espalhamento com cor preta
+     */
+}
+
+p{
+    text-align: justify;
+    background-attachment: fixed;
+}
+h1{
+    color: #FA1505;
+}
+h2{
+    color: #5E05F0;
+}

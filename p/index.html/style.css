@@ -1,0 +1,68 @@
+:root{
+    --color1: #D8D2E1;
+    --color2: #34435E;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color2);
+}
+
+div.first{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: var(--color1);   
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-radius: 10px 20px 10px 20px;
+}
+div.first > h1{
+    margin: 35px;
+}
+div.first > p{
+    color: black;
+}
+div.first > input{
+    width: 70%;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 5px;
+}
+div.first > button{
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+.botao1{
+    margin-bottom: 5px;
+
+}
+.botao2{
+    margin-bottom: 5px;
+}
+div.second{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: var(--color1);   
+    width: 300px;
+    margin: auto;
+    margin-top: 7px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px 20px 10px 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+a:hover{
+    color: rgba(43, 0, 255, 0.55);
+    text-decoration: underline;
+
+}

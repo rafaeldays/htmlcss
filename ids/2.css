@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(64, 141, 115);
+}
+h2{
+    color: rgb(24, 74, 58);
+}
+#main{ /*usamos os ids para identificar uma tag, e diferencia-las das outras*/
+    color: brown;
+    text-align: center;
+}
+/*esse id seletor pode ser considerado um h1 principal, pois apenas os títulos que contém o id ficarão centralizados. No entanto, qualquer tag que tiver esse id ficar centralizado*/
